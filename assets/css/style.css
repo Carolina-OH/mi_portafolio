@@ -35,6 +35,54 @@ margin-right: 10%;
   
   .nombre{
   font-family: 'Pattaya', sans-serif; 
-  color: #660066;
-  font-size: 45px;
+   font-size: 45px;
+   
+  }
+  header{
+      background-image: url(../img/foto1.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 63%;
+      height: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+  }
+
+  @media (max-width: 991.98px) { 
+    header{
+    width: 100%; 
+    }
+    .frase{
+    width: 100%;  
+    margin-top:2px;
+    margin-bottom:2px;
+    }
+    }
+
+  .frase{
+      margin-top: -190px;
+      margin-bottom: 100px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 63%;
+      background-color:rgba(85, 5, 45, 0.2);
+      padding-top: 10px;
+      font-size: 40px;
+      color: white;
+     
+    
+      
+  }
+
+  .raya{
+  width: 25%;
+  border-color:white;
+  margin-bottom: 0px;
+  }
+  
+  .fondo-morado{
+   background-color: #660066 ;
+   color: white;
   }
