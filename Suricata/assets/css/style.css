@@ -1,0 +1,17 @@
+body{
+font-family:'Open Sans', sans-serif;
+}
+
+.parrafo{
+font-size: 40px;
+font-weight: 700;    
+}
+
+.px{
+padding-bottom: 3%;
+padding-top:3%;
+}
+
+.ml-10{
+margin-left: 10%;
+}
