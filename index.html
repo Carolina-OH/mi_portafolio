@@ -13,9 +13,10 @@
 <body>
 <!--Navbar-->
 <!-- Image and text -->
-<nav class="navbar navbar-expand-lg text-white" style="background-color: #660066;">
+<nav class="navbar sticky-top navbar-expand-lg text-white" style="background-color: #660066;" id="inicio">
     <p class="navbar-brand text-center pt-0 pb-0" id="letra-logo" style="font-size: 50px; font-weight:400; font-family: 'Pattaya', sans-serif;">
-    Caro 
+      <a class="nav-link active text-white" href="#">Caro </a>
+     
     </p>
     <button class="navbar-toggler navbar-dark" style="border: 1px solid white;" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon" style="width: 2em; height: 2em;"></span>
@@ -23,16 +24,16 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <ul class="navbar-nav" style="font-size: 20px; font-weight: 300;">
     <li class="nav-item">
-      <a class="nav-link active text-white" href="#">Sobre mi</a>
+      <a class="nav-link active text-white" href="#about">Sobre mi</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active text-white" href="#">Experiencia</a>
+      <a class="nav-link active text-white" href="#experiencia">Experiencia</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active text-white" href="#">Trabajos</a>
+      <a class="nav-link active text-white" href="#trabajos">Trabajos</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active text-white" href="#">Contacto</a>
+      <a class="nav-link active text-white" href="#contacto">Contacto</a>
     </li>
   </ul>
     </div>
@@ -47,7 +48,7 @@
 <span class="nombre">Carolina</span>
 </div>
 
-<section>
+<section class="d-none d-lg-block"id="about">
   <div class="row">
     <div class="col-12 text-center">
 <p style="margin-left: 15%; margin-right: 15%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem culpa sapiente dolor porro vitae. Accusantium officiis quaerat quas, dolores asperiores minima nihil neque aliquid molestiae nobis doloribus id ratione sequi.Facere nisi ex amet, illum consequatur a enim fugiat quis tempora repellendus harum assumenda magni quia perferendis eum laborum illo esse nostrum reiciendis officiis. Deserunt aliquid beatae magnam sed nihil.</p>
@@ -76,20 +77,28 @@
   </div>
 </section>
 
-<section class="mt-5 mb-5">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center">MI EXPERIENCIA</h1>
+<section class="mt-5 mb-5 " id="experiencia"> 
+  <div class="row" style="margin-left:20%;margin-right:20%">
+    <div class="col-lg-12 col-sm-12">
+      <h1 class="text-center" style="font-size:300%; font-weight: 600;">MI EXPERIENCIA</h1>
       <hr style="width: 10%; margin-bottom: 50px;">
     </div>
-    <div class="col-4 text-center" style="margin-left: 15%;">
-      <i class="fas fa-cookie fa-7x" style="color: #660066;"></i><br>
-      <h2 class="mt-3">Repostera Amateur</h2>
-      <p>1998-2020</p>
+    <div class="col-lg-6 col-sm-12 d-flex text-center justify-content-center ml-auto mr-auto pr-0">
+      <ul class="list-unstyled">
+        <li><i class="fas fa-cookie fa-7x" style="color: #660066;"></i><br></li>
+        <li><h2 class="mt-3">Repostera Amateur</h2></li>
+        <li><p>1998-Actualidad</p></li>
+      </ul>
     </div>
-    <div class="col-4 text-center pl-0">
-      <i class="fas fa-school fa-7x "style="color: #660066;"></i>
-      <h2 class="mt-3">Estudiante de Bootcamp</h2>
+    <div class="col-lg-6 col-sm-12 d-flex text-center pl-0 justify-content-center ml-auto mr-auto">
+      <ul class="list-unstyled">
+        <li><i class="fas fa-school fa-7x "style="color: #660066;"></i></li>
+        <li><h2 class="mt-3">Estudiante Bootcamp</h2></li>
+        <li><p>Actualidad</p></li>
+      </ul>
+      
+      
+      
 
       
     </div>
@@ -97,14 +106,15 @@
 </section>
 
 
-<section class="fondo-morado mb-5 pt-5 pb-5">
-  <div class="row" style="margin-left:20%; margin-right:20%;padding-bottom: 3%;">
-    <div class="col-12 text-center">
-      <H1 style="font-size: 52px;">MIS ÚLTIMOS TRABAJOS</H1>
-      <hr style="width: 10%; border-color: white; padding-bottom: 70px;">
+<section class="fondo-morado mb-5 pt-5 pb-5" id="trabajos">
+  <div class="row" style="margin-right: 20%; margin-left: 20%;">
+    <div class="col-lg-12 text-center" id="tseccion2">
+      <p class="ultimos" >MIS ÚLTIMOS TRABAJOS</p>
+      <hr style="width: 30%; border-color: white;">
     </div>
-    <div class="col-4 text-center text-dark mb-5">
-      <div class="card" style="width: 16rem;">
+    
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4  mr-auto ml-auto  mt-5 pb-3 text-center text-dark  d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/meet_coffee/index.html" ><img class="card-img-top" src="assets/img/meet.JPG" alt="Card image cap"></a>
         <div class="card-body" >
           <hr>
@@ -115,8 +125,8 @@
         </div>
       </div>
     </div> 
-    <div class="col-4 text-center text-dark mb-5">
-      <div class="card" style="width: 16rem;">
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4  mr-auto ml-auto  mt-5 pb-3 text-center text-dark  d-flex justify-content-center" >
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/Iguana/index.html" ><img class="card-img-top" src="assets/img/iguana.JPG" alt="Card image cap"></a>
         <div class="card-body">
           <hr>
@@ -126,8 +136,8 @@
         </div>
       </div>
     </div> 
-    <div class="col-4 text-center text-dark mb-5">
-      <div class="card" style="width: 16rem;">
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mr-auto ml-auto  mt-5 pb-3 text-center text-dark d-flex justify-content-center" >
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/Cuppon/Index.html" ><img class="card-img-top" src="assets/img/cuppon.JPG" alt="Card image cap"></a>
         <div class="card-body">
           <hr>
@@ -137,8 +147,8 @@
         </div>
       </div>
     </div> 
-    <div class="col-4 text-center text-dark">
-      <div class="card" style="width: 16rem;">
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mr-auto ml-auto  mt-5  pb-3 text-center text-dark d-flex justify-content-center" >  
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/Suricata/index.html" ><img class="card-img-top" src="assets/img/suricata.JPG" alt="Card image cap"></a>
         <div class="card-body">
           <hr>
@@ -148,8 +158,8 @@
         </div>
       </div>
     </div> 
-    <div class="col-4 text-center text-dark">
-      <div class="card" style="width: 16rem;">
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4 mr-auto ml-auto  mt-5  pb-3 text-center text-dark  d-flex justify-content-center"  >
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/Ricomida/index.html" ><img class="card-img-top" src="assets/img/ricomida.JPG" alt="Card image cap"></a>
         <div class="card-body">
           <hr>
@@ -159,8 +169,8 @@
         </div>
       </div>
     </div> 
-    <div class="col-4 text-center text-dark">
-      <div class="card" style="width: 16rem;">
+    <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4  mr-auto ml-auto  mt-5 pb-3 text-center text-dark d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
         <a href="proyectos anteriores/Ricomida/index.html" ><img class="card-img-top" src="assets/img/ricomida.JPG" alt="Card image cap"></a>
         <div class="card-body">
           <hr>
@@ -168,19 +178,21 @@
           <p class="card-text">asdasd</p>
           
         </div>
+        </div>
       </div>
-    </div> 
-
   </div>
 </section>
-<section class="mt-5 pt-5">
+<section class="mt-5 pt-5" id="contacto">
   <div class="row">
     <div class="col-12 "> 
-    <h1 class="text-center">Contacto</h1>
-    <hr style="width: 10%;">
+    <h1 class="text-center" style="font-size: 52px;font-weight: 700;">CONTACTO</h1>
+    <hr style="width: 10%; border: solid 1px; border-color: gray;">
     </div>
+    <div class="col-12">
     <div class="typeform-widget" data-url="https://form.typeform.com/to/aF9kWrfr" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=aF9kWrfr&utm_source=typeform.com-01EEB9A8CHCV22DYWR16YVQ9H0-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
   </div>
+</div>
+</div>
 </section>
 
 <footer class="fondo-morado pt-5 pb-5">
@@ -191,23 +203,16 @@
     <div class="col-6 text-center">
       
       <i class="fab fa-github-square fa-3x mr-3" data-toggle="tooltip" title="Github"  data-placement="top"></i>
-      <i class="fab fa-linkedin fa-3x mr-3"></i>
-      <i class="fab fa-twitter-square fa-3x mr-3"></i>
-      <i class="fab fa-facebook-square fa-3x"></i>
-      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-        Tooltip on top
-      </button>
-
-     <!--  <span class="d-inline-block" tabindex="0" data-toggle="tooltip" title="Disabled tooltip">
-        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
-      </span> -->
+      <i class="fab fa-linkedin fa-3x mr-3"data-toggle="tooltip" title="Linkedin"  data-placement="top"></i>
+      <i class="fab fa-twitter-square fa-3x mr-3" data-toggle="tooltip" title="Twitter"  data-placement="top"></i>
+      <i class="fab fa-facebook-square fa-3x" data-toggle="tooltip" title="Facebook"  data-placement="top"></i>
     </div>
   </div>
-</footer>
+</footer> 
 
-<script src="assets/js/script.js"></script>
 <script src=" https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
